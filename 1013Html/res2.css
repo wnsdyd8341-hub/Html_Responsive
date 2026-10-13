@@ -1,0 +1,55 @@
+@import url("../reset.css");
+
+.content{
+    width: 90%;
+    max-width: 700px;
+    min-width: 290px;
+    margin: auto;
+    padding: 3%;
+    background-color: antiquewhite;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+}
+li{
+    display: flex;
+    gap: 2%;
+    margin-bottom: 2%;
+    align-items: center;
+    background-color: #fff;
+}
+li:last-child{
+    margin-bottom: 0px;
+}
+li .card_txt{
+    width: 50%;
+}
+.imgbox{
+    width: 50%;
+    overflow: hidden;
+}
+.imgbox img{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:768px){
+    .card_txt h3{
+        font-size: 16px;
+    }
+    .card_txt p{
+        font-size: 14px;
+    }
+}
+@media (max-width:480px){
+    li{
+        flex-direction: column;
+    }
+    .imgbox ,.card_txt{
+        width: 100%;
+    }
+    .card_txt{
+        padding: 2%;
+    }
+}

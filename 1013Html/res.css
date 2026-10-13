@@ -1,0 +1,28 @@
+@import url("../reset.css");
+html{
+    /* html에서 폰트사이즈를 정해둘경우 */
+    font-size: 8px;
+}
+h1{
+    /* 이렇게 rem으로 정해둬서 쓸수도있다  */
+    font-size: 2rem;;
+}
+
+.box{
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    min-width: 300px;
+}
+h1{
+    font-size: 8vw;
+}
+@media (max-width :390px){
+    .box{
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    h1{
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,44 @@
+@import url("../reset.css");
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    min-width: 290px;
+    padding: 3%;
+    background-color:antiquewhite;
+}
+
+.cardlist{
+    background-color: red;
+    display: flex;
+    
+    gap: 10px;
+    
+    
+}
+.cardlist li{
+    /* calc 쓸때 연산자 사이 한칸 공백 필요 */
+    width: calc((100% - 50px) / 6 );
+    background-color: aqua;
+    /* 넓이를 나누는것 */
+    
+    padding: 3%;
+    
+}
+
+@media (max-width:768px){
+    .cardlist li{
+        width: calc((100% - 30px) / 4 );
+    }
+}
+@media (max-width:480px){
+    .cardlist li{
+        width: calc((100% - 10px) / 2);
+    }
+}
+@media (max-width:390px){
+    .cardlist li{
+        width: 100%;
+    }
+}

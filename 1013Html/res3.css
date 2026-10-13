@@ -1,0 +1,45 @@
+@import url("../reset.css");
+
+.content{
+    background-color: antiquewhite;
+    margin: auto;
+    max-width: 700px;
+    min-width: 290px;
+
+}
+.card{
+    width: 100%;
+    padding: 6%;
+}
+li{
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+    margin-bottom: 2%;
+}
+li:last-child{
+    margin-bottom: 0%;
+}
+.imgbox , .textbox{
+    flex: 1;
+}
+
+@media (max-width:700px){
+    h3{
+        font-size: 14px;
+    }
+    p{
+        font-size: 12px;
+    }
+}
+@media (max-width:400px){
+    li{
+        flex-direction: column;
+    }
+    .imgbox,.textbox{
+        width: 100%;
+    }
+    .textbox{
+        padding: 2%;
+    }
+}
