@@ -12,7 +12,8 @@
 .cardlist{
     background-color: red;
     display: flex;
-    
+    /* 밑으로 배치할수있는거 */
+    flex-wrap: wrap;
     gap: 10px;
     
     

@@ -1,0 +1,85 @@
+/* 반응형 */
+@media (max-width:1000px){
+    .cardlist ul{
+        /* grid-template-columns: repeat(3,minmax(0,1fr)); */
+
+    }
+}
+
+@media (max-width:768px){
+    .menu{
+        display: none;
+        position:absolute;
+        top:45px;
+        right: 0;
+        gap: 20px;
+        flex-direction: column;
+        padding: 20px 0px;
+        background-color: aqua;
+    }
+    .menu.show{
+        display: flex;
+    }
+    .hamburger{
+        display: block;
+    }
+    nav{
+        justify-content: flex-end;
+        position: relative;
+    }
+    /* 메인 */
+    .intro{
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .intro_text h2{
+        font-size: 32px;
+    }
+    .intro_text p{
+        font-size: 16px;
+    }
+    .filter_btn{
+        gap: 7px;
+        font-size: 12px;
+        border-radius: 3px;
+    }
+    .filter_btn img{
+        width: 20px;
+    }
+    .filter_btn span{
+        display: none;
+    }
+    .cardlist ul{
+        /* grid-template-columns: repeat(2,minmax(0,1fr)); */
+
+    }
+
+}
+@media (max-width:480px){
+    .intro_text p br{
+        display: block;
+    }
+    .cardlist ul{
+        /* grid-template-columns: repeat(1,minmax(0,1fr)); */
+
+    }
+    .country p{
+        font-size: 14px;
+    }
+    .cardlist h3{
+        font-size: 16px;
+    }
+    .country p{
+        font-size: 14px;
+    }
+}
+@media (max-width:390px){
+    header{
+        height: 55px;
+    }
+    .inner h1{
+        font-size: 20px;
+    }
+}
+

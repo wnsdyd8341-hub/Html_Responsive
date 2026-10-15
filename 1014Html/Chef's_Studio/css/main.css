@@ -1,0 +1,128 @@
+@import url("reset.css");
+@import url("font.css");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'OngleipParkDahyeon';
+    src:url("../fonts/온글잎\ 박다현체.ttf");
+    font-weight: normal;
+    font-display: swap;
+}
+
+body{
+    background-color: #eee;
+}
+.wrap{
+    width: 100%;
+}
+header{
+    background-color: #fff;
+    height: 80px;
+}
+.inner{
+    width: 90%;
+    max-width: 1280px;
+    margin: auto;
+    background-color:rgb(255, 192, 192); 
+}
+header .inner {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.inner h1{
+    font-family: "Roboto", sans-serif;
+}
+nav{
+    width: 40%;
+    display: flex;
+    gap: 3%;
+}
+.menu {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8%; 
+}
+.menu a {
+    text-align: center;
+}
+/* 햄버거 메뉴 */
+.hamburger{
+    display: none;
+}
+main{
+    padding: 146px 0px;
+}
+
+.intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.intro_text h2{
+    font-size: 48px;
+        font-family: 'OngleipParkDahyeon';
+    margin-bottom: 3%;
+}
+.intro_text p{
+    font-size: 20px;
+    font-family: Inter;
+}
+.intro_text p br{
+        display: none;
+    }
+.filter_btn{
+    color: #fff;
+    background-color: #333;
+    padding: 1% 1.4%;
+    border-radius: 5px;
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+}
+.cardlist{
+    padding-top: 10%;
+}
+.cardlist ul{
+    display: grid;
+    gap: 32px 24px;
+    /* 최대 320px 알아서 간격에 맞게 맞춰줌 */
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    /* grid-template-columns: repeat(4,minmax(0,1fr)); */
+
+}
+.cardlist > ul > li{
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #fff;
+}
+.cardlist > ul> li> img {
+    width: 100%;
+    display: block;
+}
+.card_info{
+    padding-bottom: 5%;
+    padding-left: 5%;
+}
+.country{
+    color: #999;
+    gap: 10px;
+    display: flex;
+    margin-bottom: 10px;
+}
+.country img{
+    width: 24px;
+}
+.country p{
+    font-size: 18px;
+
+}
+.cardlist h3{
+    font-weight: 500;
+    font-size: 18px;
+    font-family: Inner;
+    padding: 20px 0px;
+}
