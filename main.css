@@ -1,0 +1,223 @@
+@import url(reset.css);
+.wrap{
+    width: 100%;
+    margin: auto;
+}
+
+
+header{
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+}
+
+.nav1{
+    display: flex;
+    justify-content: flex-end;
+    gap: 2%;
+    margin-bottom: 2%;
+}
+.headerMenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerMenu h1{
+    font-size: 32px;
+}
+.headerMenu a{
+    font-size: 14px;
+}
+.nav2{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.hamburger{
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+.hamburger span{
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+}
+
+/* 모바일 사이드메뉴 */
+.mobil_menu{
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    /* 브라우저의 높이를 다 먹겠다 라는 의미 100vh */
+    height: 100vh;
+    background-color: #fff;
+    padding-top: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
+    z-index: 999;
+    transition: all 0.3s;
+}
+.mobil_menu.active{
+    left:0;
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,50%);
+    z-index: 99;
+    display: none;
+}
+
+.mobil_menu li{
+    border-bottom: 1px solid #eee;
+}
+.mobil_menu li:last-child{
+    border: none;
+}
+.mobil_menu li a{
+    display: block;
+    padding: 16px 0px;
+}
+.x{
+    display: none;
+    z-index: 9999;
+    width: 30px;
+    height: 30px;
+}
+.videoArea{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    /* height: 720px; */
+    max-height: 1080px;
+    min-height: 300px;
+    padding-top: 18%;
+    background-color: #333;
+}
+.videoArea{
+    color: #fff;
+}
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    opacity: 0.3;
+}
+.videoText{
+    position: absolute;
+    top: 10%  ;
+    left: 18%;
+    
+
+}
+.videoText h2{
+    font-size: clamp(28px,4vw,120px);
+    
+}
+.videoText a{
+    display: block;
+    width: 20%;
+    max-width: 300px;
+    min-width: 100px;
+    text-align: center;
+    padding: 1% 0;
+    color: #fff;
+    /* background-color: red; */
+    border: 1px solid #fff;
+    font-size: clamp(12px, 1vw, 16px);
+}
+.videoText p{
+    width: 50%;
+    margin-bottom: 6%;
+    font-size: clamp(12px, 2vw, 18px);
+}
+
+
+
+.newsArea{
+    width: 70%;
+    margin: auto;
+    padding: 10% 0;
+}
+.newsArea h2{
+    text-align: center;
+    padding: 5%;
+}
+.newsArea h3{
+    
+    margin: 5% 0%;
+    font-size: 15px;
+}
+.newsBox{
+    display: grid;
+    gap: 2%;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+}
+
+.newsBox img{
+    width: 100%;
+    display: block;
+    height: 170px;
+}
+.SwiperArea{
+    background-color: rgba(0,0,0,10%);
+    padding: 5%;
+}
+.title{
+    text-align: center;
+    margin-bottom: 5%;
+}
+.title h1{
+    margin-bottom: 1%;
+}
+.swiper {
+        width: 100%;
+        height: 100%;
+    }
+.swiper-wrapper{
+    margin: 5%;
+}
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+    .productText{
+        background-color: #fff;
+        padding: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3%;
+    }
+    .productText p{
+        font-size: 12px;
+        color: rgba(0,0,0,30%);
+    }
+   
+    footer{
+        width: 100%;
+        background-color: #333;
+        padding: 10%;
+    }
+
